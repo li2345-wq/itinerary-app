@@ -7,7 +7,7 @@ public class Main {
         Vertx vertx = Vertx.vertx();
         vertx.deployVerticle(new MainVerticle(), res -> {
             if (res.succeeded()) {
-                System.out.println("MainVerticle deployed successfully");
+                System.out.println("Main Verticle deployed successfully");
             } else {
                 System.out.println("Deployment failed: " + res.cause());
             }
